@@ -91,13 +91,17 @@ export default function Home() {
         <h2>Real-world example</h2>
         <p>Let&lsquo;s walk through an example map for an e-commerce business featuring personalized product recommendations. The example aims to demonstrate how the components interact to provide a holistic view of the value stream. If you prefer, you can check the example <a href="https://miro.com/app/board/uXjVLC8w4lM=/?moveToWidget=3458764607680267152&cot=14" target="_blank" rel="noopener noreferrer">directly on Miro</a>.</p>
 
-        <Image
-          alt="Example map"
-          className={styles.exampleMap}
-          src="/real-world-example.webp"
-          width={1200}
-          height={1335}
-        />
+        <div className={styles.miroEmbed}>
+          <iframe
+            allow="fullscreen; clipboard-read; clipboard-write"
+            allowFullScreen
+            frameBorder="0"
+            height="600"
+            scrolling="no"
+            src="https://miro.com/app/live-embed/uXjVLC8w4lM=/?moveToViewport=1991,-145,1828,2029&embedId=205904201659"
+            width="100%"
+          ></iframe>
+        </div>
 
         <p>
           🔵 In this example, the <strong>persona</strong> at the top of the map is the customer, who benefits from the value the business delivers.
@@ -147,7 +151,7 @@ export default function Home() {
         <p>
           Fork the Miro template and start mapping your product&lsquo;s value stream today.
         </p>
-        <a href="https://miro.com/app/board/uXjVLC8w4lM=/?moveToWidget=3458764612784591483&cot=14" className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
+        <a href="https://miro.com/app/board/uXjVI8Sf_fk=/?moveToWidget=3458764612784591483&cot=14" className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
           Fork the template
         </a>
       </section>
