@@ -75,7 +75,8 @@ export default function Home() {
 
         <h3>🟣 Solutions</h3>
         <p>Solutions are the tools, processes, or systems implemented to fulfill personas&lsquo; needs.</p>
-        <p>Solutions should be represented with purple post-its linked to needs.</p>
+        <p>Each solution is attached to exactly one need, and each need can have at most one solution attached to it.</p>
+        <p>Solutions should be represented with purple post-its attached to needs.</p>
 
         <h3>🟠 Contributors</h3>
         <p>Teams or individuals responsible for implementing solutions to fulfill needs.</p>
@@ -124,7 +125,7 @@ export default function Home() {
         </p>
 
         <p>
-          🟣 Each need has a dedicated <strong>solution</strong> linked to it.
+          🟣 Each need can have a dedicated <strong>solution</strong> linked to it.
         </p>
 
         <p>
