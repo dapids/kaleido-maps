@@ -66,7 +66,7 @@ export default function Home() {
         <p>
           Core requirements or desires of personas that your product or service aims to fulfill.
         </p>
-        <p>Every need should be linked to one or more personas and can be broken down into sub-needs.</p>
+        <p>Every need should be linked to one or more personas, can be broken down into sub-needs, and can depend on other needs.</p>
         <p>Needs should be represented with yellow post-its.</p>
 
         <h3>🟢 KPIs</h3>
@@ -76,6 +76,7 @@ export default function Home() {
         <h3>🟣 Solutions</h3>
         <p>Solutions are the tools, processes, or systems implemented to fulfill personas&lsquo; needs.</p>
         <p>Each solution is attached to exactly one need, and each need can have at most one solution attached to it.</p>
+        <p>Solutions can also depend on other solutions when one capability must be in place before another can deliver value.</p>
         <p>Solutions should be represented with purple post-its attached to needs.</p>
 
         <h3>🟠 Contributors</h3>
@@ -191,6 +192,10 @@ export default function Home() {
 
         <p>
           Additionally, needs can form hierarchies, with a generic need serving as a parent to more specific needs - as we can see in the <a href="#real-world-example">example mentioned above</a>.
+        </p>
+
+        <p>
+          In the same way, solution maps can include dependency chains between solutions to represent implementation order and technical prerequisites.
         </p>
       </section>
 
