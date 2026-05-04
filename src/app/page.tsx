@@ -1,16 +1,37 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Value Stream Mapping Framework",
+  description: "Learn the Kaleido Maps framework to map personas, needs, KPIs, solutions, contributors, and stream blockers across your product value stream.",
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Kaleido Maps",
+  url: "/",
+  description:
+    "Kaleido Maps helps product teams map, explore, and optimize their product value stream.",
+  inLanguage: "en",
+};
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <section className={styles.hero}>
         <Image
-          alt="Kaleido Maps hero image"
+          alt="Kaleido Maps framework for mapping and optimizing product value streams"
           className={styles.heroImage}
           src="/hero.webp"
           width={1000}
           height={500}
+          priority
         />
 
         <div className={styles.heroContent}>
@@ -71,7 +92,7 @@ export default function Home() {
 
         <h3>🟢 KPIs</h3>
         <p>KPIs (Key Performance Indicators) measure the success of addressing personas&lsquo; needs. They help track progress and assess the impact of solutions.</p>
-        <p>KPIs be represented with green post-its attached to needs.</p>
+        <p>KPIs should be represented with green post-its attached to needs.</p>
 
         <h3>🟣 Solutions</h3>
         <p>Solutions are the tools, processes, or systems implemented to fulfill personas&lsquo; needs.</p>
